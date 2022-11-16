@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 1024px;
+    height: 630px;
+    margin: 16px auto;
+    background: linear-gradient(90deg, #67e448, #e04209 25%, #c2b939);
+    border: 2px solid black;
+    border-radius: 16px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header header header'
+      'nav nav nav nav'
+      'main main main aside'
+      'footer footer footer footer';
+}
+
+header,
+nav,
+main,
+aside,
+section,
+footer{
+    background: linear-gradient(90deg, #387229, #c3e009 25%, #f7e920f4);
+    color: rgb(20, 20, 20);
+    border: 2px solid white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    grid-area: header;
+    height: 88px;
+    color: rgb(246, 106, 19);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Ink Free;
+    font-style:oblique;
+    letter-spacing: 6px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 2px -5px rgb(16, 15, 15);
+  }
+  
+  #figure{
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: black;
+    height: 100px;
+    justify-content: end;
+  }
+  
+  .grid-header{
+    display: grid;
+    grid-template-columns: 200px 300px 200px ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    grid-area: nav;
+    height: 48px;
+    color: rgb(19, 19, 19);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Ink Free;
+    font-style:initial;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+        
+  }
+
+  .grid-nav{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 150px 100px;
+    grid-template-rows: auto;
+    justify-content: center;
+       
+  }
+
+  main {
+    grid-area: main;
+    height: 400px;
+    width: 1020px;
+    
+  }
+  .parrafo{
+    color: rgb(9, 9, 9);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Lucida Calligraphy;
+    letter-spacing: 2px;
+    text-align: center;
+    float:right;
+  }
+
+  
+  .img-2 {
+    float:left;
+    grid-area: aside;
+    height: 340px;
+    width: 2000px;
+    justify-content: center;
+    text-align: center;   
+  }
+  #images{
+    width: 200px;
+    border-radius: 30%;
+  }
+  #imagen-2{
+    width: 150px;
+    border-radius: 30%;
+  }
+
+  aside #h3{
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 10;
+    font-family: Ink Free;
+  }
+
+  aside #h6{
+    color: rgb(19, 19, 19);
+    font-size: 10px;
+    font-weight: 10;
+    font-family: Ink Free;
+  }
+
+  
+
+  footer {
+    grid-area: footer;
+    height: 32px;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: Ink Free;
+    display: grid;
+    grid-template-columns: 600px 200px ;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
